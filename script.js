@@ -23,10 +23,6 @@ function limpar_campos() {
 }
 
 function cadastrar_funcionario() {
-    if (!nomeFuncionario || !cpf || !dataNasc || !salario || !funcao) {
-        alert("Não foi possível acessar todos os campos do cadastro!");
-        return;
-    }
     const nome = nomeFuncionario.value.trim();
     const cpfInformado = cpf.value.replace(/\D/g, "");
     const data = dataNasc.value;
