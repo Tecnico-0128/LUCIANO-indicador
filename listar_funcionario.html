@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Listagem</title>
+</head>
+
+<body>
+    <header>
+        <h1>Listar Funcionário</h1>
+        <a href="cadastro_funcionario.html">Cadastrar Funcionário</a>
+        <a href="atualizar_funcionario.html">Atualizar Funcionário</a>
+    </header>
+    <main>
+        <div class="container">
+            <label>Funcionário</label>
+            <select id="comboFuncionario">
+                <option value="Selecione um funcionário"></option>
+            </select>
+            <label>CPF:</label>
+            <input type="text" id="listar_cpf" readonly>
+            <label> Data Nascimento:</label>
+            <input type="text" id="listar_dataNasc" readonly>
+            <label>Salário:</label>
+            <input type="text" id="listar_salario" readonly>
+            <label>Função:</label>
+            <input type="text" id="listar_funcao" readonly>
+            <label>Estado Atual</label>
+            <input type="text" id="listar_situacao" readonly>
+            <div class="containerBotoes">
+                <button onclick="listar_funcionario()">Listar</button>
+                <button onclick="atualizar_situacao()">Atualizar Situacao</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
